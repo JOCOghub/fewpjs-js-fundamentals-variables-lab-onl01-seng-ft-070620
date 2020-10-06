@@ -39,8 +39,8 @@ describe('index.js', function () {
       expect(function () { companyCeo = 'Lauren Hart' }).to.not.throw(TypeError);
     });
 
-    // it('is not defined as a const', function () {
-    //   expect(js).not.to.match(/const companyCeo/, "Expected companyCeo not to be a const");
-    // });
+    it('is not defined as a const', function () {
+      expect(js).not.to.match(/const companyCeo/, "Expected companyCeo not to be a const");
+    });
   });
 });
